@@ -125,7 +125,7 @@ if __name__ == "__main__":
     points = gpd.read_file("./geosample-arcgis/shape/poi-osm.shp", encoding='cp1251')
 
     #Перевірка на перевизначення проєкцій
-    admin_crs = admin.to_crs(epsg=31370)
+    admin_crs = admin.to_crs(epsg=32644)
     print(admin_crs.crs)
     admin_converted = admin_crs.to_crs(epsg=4326)
     print(admin_converted.crs)
